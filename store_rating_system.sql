@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 15, 2026 at 07:38 PM
+-- Generation Time: May 15, 2026 at 09:47 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -40,12 +40,9 @@ CREATE TABLE `ratings` (
 --
 
 INSERT INTO `ratings` (`id`, `user_id`, `store_id`, `rating`, `created_at`) VALUES
-(1, 4, 1, 5, '2026-05-14 19:15:11'),
-(2, 4, 2, 4, '2026-05-14 19:15:13'),
-(3, 4, 3, 3, '2026-05-14 19:15:16'),
-(4, 5, 2, 4, '2026-05-14 19:28:09'),
-(5, 5, 1, 3, '2026-05-14 19:28:12'),
-(6, 5, 3, 5, '2026-05-14 19:28:14');
+(18, 13, 2, 4, '2026-05-15 19:42:34'),
+(19, 13, 3, 3, '2026-05-15 19:42:36'),
+(21, 13, 1, 5, '2026-05-15 19:42:40');
 
 -- --------------------------------------------------------
 
@@ -66,7 +63,7 @@ CREATE TABLE `stores` (
 --
 
 INSERT INTO `stores` (`id`, `name`, `address`, `email`, `owner_id`) VALUES
-(1, 'Chai Point', 'Shop No. 4, M.G. Road, Near Railway Station, Pune', 'contact@starbucks.com', 6),
+(1, 'Chai Point', 'Shop No. 4, M.G. Road, Near Railway Station, Pune', 'contact@starbucks.com', 12),
 (2, 'Haldiram Sweets', 'Sector 17, Vashi, Navi Mumbai, 400703', 'info@nike.com', NULL),
 (3, 'Apollo Pharmacy', 'G-12, Indiranagar 80 Feet Road, Bengaluru', 'hello@burgerjoint.com', NULL);
 
@@ -92,10 +89,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `address`, `role`, `created_at`) VALUES
 (3, 'System Administrator', 'admin@platform.com', '$2a$10$w8gZ9YshzCen0Gf7yK00duoGg2h2.Gid77u6lR6P7V9fI.38b0Nbe', 'Main Admin HQ', 'Admin', '2026-05-14 19:01:41'),
-(4, 'Omkar Somwanshi Developer ', 'testuser@gmail.com', '$2a$10$3jrEtSZzgVNnWlMCmAykL.w7IFd0jUxpyw4qhY884byJEIKMhSpPW', 'pune', 'Normal', '2026-05-14 19:14:37'),
-(5, 'Omkar Somwanshi Tester', 'omkar@tester.com', '$2a$10$Qw1N1cpSwmwM.CmAHFu4GurWTqPG3nKokUaDiCtzVG3kTz5.BexcG', 'Saswad', 'Normal', '2026-05-14 19:28:04'),
-(6, 'Rahul Sharma (Manager)', 'rahul.sharma@chaipoint.in', '$2a$10$w8gZ9YshzCen0Gf7yK00duoGg2h2.Gid77u6lR6P7V9fI.38b0Nbe', 'Downtown', 'StoreOwner', '2026-05-14 19:36:41'),
-(8, 'Omkar Somwanshi Developer ', 'omkar@platform.com', '$2a$10$y8swxU.rZDlaHRA/MtReuu5DsWEfN7TaNHJVVcpiX.jK6py0ZMkrq', 'pune', 'Normal', '2026-05-14 20:22:34');
+(12, 'Rahul Sharma Store Manager', 'rahul.sharma@chaipoint.in', '$2a$10$pDLgoB02VssbMZkQ6dZz/OU.C9wCCK5vBqui/DY2fTqzT79dtPNJW', 'mumbai', 'StoreOwner', '2026-05-15 19:39:54'),
+(13, 'Omkar Somwanshi Tester', 'testuser@gmail.com', '$2a$10$AR542Y6q1GnOkm30KDc4VexMjlFSByVh/.OfS0pHxs4eD/LEOdAkK', 'Pune', 'Normal', '2026-05-15 19:42:26');
 
 --
 -- Indexes for dumped tables
@@ -132,7 +127,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `ratings`
 --
 ALTER TABLE `ratings`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `stores`
@@ -144,7 +139,7 @@ ALTER TABLE `stores`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Constraints for dumped tables
