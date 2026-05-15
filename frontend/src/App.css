@@ -1,0 +1,29 @@
+/* --- Global Styles --- */
+body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #f4f7f9; color: #333; }
+
+/* --- Navbar --- */
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 0 5%; height: 70px; background: #1a237e; color: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.logout-btn { background: #ff5252; border: none; padding: 8px 20px; color: white; border-radius: 4px; cursor: pointer; font-weight: bold; }
+
+/* --- Login Box Centered --- */
+.login-box { background: white; max-width: 400px; margin: 80px auto; padding: 40px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; }
+.login-box input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; }
+.login-box button { width: 100%; padding: 12px; background: #3f51b5; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; margin-top: 10px; }
+.toggle-text { margin-top: 20px; color: #3f51b5; cursor: pointer; text-decoration: underline; }
+
+/* --- Admin Dashboard Layout --- */
+.container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+.controls { display: flex; background: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; gap: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+.controls input { flex: 3; padding: 10px; border: 1px solid #ddd; border-radius: 6px; }
+
+.stats { display: flex; gap: 20px; margin-bottom: 30px; }
+.card { background: white; flex: 1; padding: 25px; border-radius: 12px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-bottom: 5px solid #3f51b5; }
+.card h3 { font-size: 2.5rem; margin: 0; color: #1a237e; }
+.card p { color: #888; font-weight: bold; margin-top: 5px; text-transform: uppercase; }
+
+/* --- Tables --- */
+.admin-view { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 15px; text-align: left; border-bottom: 1px solid #eee; }
+th { background: #f8f9fa; color: #666; font-size: 0.8rem; text-transform: uppercase; }
+.badge { padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: bold; background: #e3f2fd; color: #1e88e5; }
